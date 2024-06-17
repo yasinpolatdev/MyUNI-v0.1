@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+    branches:
+    - master
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -12,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.myunilab.net
-        username: ${{ admin3@myunilab.net }}
-        password: ${{ 6F%!u+a^4Y*@ }}
+        username: ${{ secrets.admin3@myunilab.net }}
+        password: ${{ secrets.6F%!u+a^4Y*@ }}
         server-dir: /home/myunilab/test3
