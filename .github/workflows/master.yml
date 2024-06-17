@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.myunilab.net
-        username: ${{ secrets.admin3@myunilab.net }}
-        password: ${{ secrets.6F%!u+a^4Y*@ }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /home/myunilab/test3
